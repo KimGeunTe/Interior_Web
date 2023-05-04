@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>MyPlace</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/btn.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts\flaticon\font\flaticon.css') }}" />
+    
+    <noscript>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" />
+    </noscript>
+</head>
+
+<body class="is-preload-0 is-preload-1 is-preload-2">
+    <!-- Main -->
+    <div id="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="col-lg-9 text-center">
+                <form action="#" class="narrow-w form-search d-flex align-items-stretch mb-3" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <h2>
+                      스타일 : {{style}}
+                      <br>
+                      {{prob}} %
+                    </h2>
+                    <a href="move_furniture" title="Button push blue/green" class="button btnPush btnBlueGreen">3D 스타일링</a>
+                </form>
+            </div>
+        </header>
+
+        <!-- Thumbnail -->
+        <div id="menu1">
+            <section id="thumbnails">
+                <div><a id="main-img-src" href="static/result/result/room.jpg" style="display:none;" /></div>
+            </section>
+            <div class="back color-2">
+                <div class="row columns">
+                    <ul class="menu align-center expanded text-center SMN_effect-2">
+                      <li><a class="menu-item" href="index">HOME</a></li>
+                        {% for item in labelList %}
+                          <li><a class="menu-item" href="javascript:void(0);">{{item}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="hero-header"></div>
+            <div class="products">
+                <div class="product-list">
+                   
+                </div>
+            </div>
+            <div id="furniture_list_of" style="display:none;">
+                <p id="table_price">{{session.get('table', [])[3]}}</p>
+                <p id="table_url">{{session.get('table', [])[4]}}</p>
+                <p id="table_path">{{session.get('table', [])[5]}}</p>
+                <p id="desk_price">{{session.get('desk', [])[3]}}</p>
+                <p id="desk_url">{{session.get('desk', [])[4]}}</p>
+                <p id="desk_path">{{session.get('desk', [])[5]}}</p>
+                <p id="chair_price">{{session.get('chair', [])[3]}}</p>
+                <p id="chair_url">{{session.get('chair', [])[4]}}</p>
+                <p id="chair_path">{{session.get('chair', [])[5]}}</p>
+                <p id="closet_price">{{session.get('closet', [])[3]}}</p>
+                <p id="closet_url">{{session.get('closet', [])[4]}}</p>
+                <p id="closet_path">{{session.get('closet', [])[5]}}</p>
+                <p id="bed_price">{{session.get('bed', [])[3]}}</p>
+                <p id="bed_url">{{session.get('bed', [])[4]}}</p>
+                <p id="bed_path">{{session.get('bed', [])[5]}}</p>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/furniture.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/uptest.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,572 @@
+<!-- /*
+* Template Name: Property
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}"/>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/flaticon/font/flaticon.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tiny-slider.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+    <title>
+      My Place
+    </title>
+  </head>
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="container">
+        <div class="menu-bg-wrap">
+          <div class="site-navigation">
+            <a href="index" class="logo m-0 float-start"><img src="{{ url_for('static', filename='images/logo_1.png') }}" alt="Image" class="logo main" /></a>
+
+            <ul
+              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
+            >
+              <li class="active"><a href="index">홈</a></li>
+              <li class="has-children">
+                <a href="properties">커뮤니티</a>
+                <ul class="dropdown">
+                  <li><a href="about">베스트 My Place </a></li>
+                  <li><a href="#">예비용 </a></li>
+                  <li class="has-children">
+                    <a href="#">예비용</a>
+                    <ul class="dropdown">
+                      <li><a href="#">예비용</a></li>
+                      <li><a href="#">예비용</a></li>
+                      <li><a href="#">예비용</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="services">My Place 소개</a></li>
+              <li><a href="PayApi">구독 결제</a></li>
+              <li><a href="out">로그아웃</a></li>
+            </ul>
+            
+            <a
+              href="#"
+              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+              data-toggle="collapse"
+              data-target="#main-navbar"
+            >
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="hero page-inner overlay"
+      style="background-image: url('static/images/hero_bg_3.jpg')"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">역대 베스트 My Place 선정자</h1>
+
+            <nav
+              aria-label="breadcrumb"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ol class="breadcrumb text-center justify-content-center">
+                <li class="breadcrumb-item"><a href="index">홈</a></li>
+                <li
+                  class="breadcrumb-item active text-white-50"
+                  aria-current="page"
+                >
+                  베스트 My Place
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="row text-left mb-5">
+          <div class="col-12">
+            <h2 class="font-weight-bold heading text-primary mb-4"> 역대 베스트 My Place 선정자</h2>
+          </div>
+          <div class="col-lg-6">
+            <p class="text-black-50">
+              역대 베스트 My Place 선정자는 1년에 한번씩 선정이 되는데, 선정자는 신청을 한 사용자 한에서 선정이 된다. 선정이 된다면, 
+              My Place에서 500만원 이상의 상금을 지급하며, SNS 홍보에도 도움을 드리고 있다.
+            </p>
+            <p class="text-black-50">
+              
+            </p>
+            <p class="text-black-50">
+              
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <p class="text-black-50">
+              
+            </p>
+            <p class="text-black-50">
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section pt-0">
+      <div class="container">
+        <div class="row justify-content-between mb-5">
+          <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
+            <div class="img-about dots">
+              <img src="static/images/hero_bg_3.jpg" alt="Image" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex feature-h">
+              <span class="wrap-icon me-3">
+                <span class="icon-home2"></span>
+              </span>
+              <div class="feature-text">
+                <h3 class="heading">인터뷰</h3>
+                <p class="text-black-50">
+                  제가 역대 베스트 My Place에 선정되다니 아직도 믿기지가 않네요...
+                  다른 분들도 충분히 대단한 인테리어를 하셨는데, 운도 같이 따라준 것 같아요!!
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex feature-h">
+              <span class="wrap-icon me-3">
+                <span class="icon-person"></span>
+              </span>
+              <div class="feature-text">
+                <h3 class="heading">My Place 선정자</h3>
+                <p class="text-black-50">
+                  취업 준비하면서 답답한 마음을 인테리어로 풀었는데..
+                  이렇게 좋은 상을 주셔서 너무 감사드립니다, 덕분에 지금 현재 인테리어 쪽으로 진로를 변경하고
+                  SNS 홍보까지 해주셔서 일이 많이 들어오고 있습니다! 지금 일을 하는 중에도 막히거나 하는 부분이 있으면
+                  My Place를 사용하고 있어요!! 
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex feature-h">
+              <span class="wrap-icon me-3">
+                <span class="icon-security"></span>
+              </span>
+              <div class="feature-text">
+                <h3 class="heading">보완</h3>
+                <p class="text-black-50">
+                  완벽한 가구 배치에 인테리어 센스를 가지고 있다. 
+                  여기에 따뜻함을 줄 수 있는데, 스텐스 조명을 은은한 밝기로 설정 해둔다면 좀 더 방의 분위기는
+                  따뜻하면서 세련된 분위기를 가지게 될 것이다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section pt-0">
+      <div class="container">
+        <div class="row justify-content-between mb-5">
+          <div class="col-lg-7 mb-5 mb-lg-0">
+            <div class="img-about dots">
+              <img src="static/images/hero_bg_2.jpg" alt="Image" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex feature-h">
+              <span class="wrap-icon me-3">
+                <span class="icon-home2"></span>
+              </span>
+              <div class="feature-text">
+                <h3 class="heading">인터뷰</h3>
+                <p class="text-black-50">
+                  2022년 역대 베스트 My Place에 선정되었습니다!!
+                  이렇게 저에게 이렇게 큰 상을 주신 My Place 관계자분들에게 감사드립니다.
+                  제가 그림을 좋아하고 자연을 좋아하다보니 저의 입맛대로 꾸며갔을 뿐인데..
+                  다른 사람들께서 아름답게 봐주신 덕분인 것 같습니다.
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex feature-h">
+              <span class="wrap-icon me-3">
+                <span class="icon-person"></span>
+              </span>
+              <div class="feature-text">
+                <h3 class="heading">My Place 선정자</h3>
+                <p class="text-black-50">
+                  30대, 남성으로 그림그리는 일로 근무 중이라고 하였다. 
+                  그림을 그리다보면 자연의 힐링을 가지고 싶은 경우가 있는데 원목가구와 자연의 바람이 피로감 해소에 좋다고 하여
+                  찾아보다가 My Place 알게 되었고 선정자가 원하는 인테리어를 넣었더니 바로 지금 사용중인 원목가구들이 추천되었다.
+                  그렇게 가구를 선정하여 배치도 해보고 구매까지 바로 할 수 있어서 너무 좋았다
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex feature-h">
+              <span class="wrap-icon me-3">
+                <span class="icon-security"></span>
+              </span>
+              <div class="feature-text">
+                <h3 class="heading">보완</h3>
+                <p class="text-black-50">
+                  완벽한 가구 배치에 인테리어 센스를 가지고 있다. 
+                  여기에 따뜻함을 줄 수 있는데, 스텐스 조명을 은은한 밝기로 설정 해둔다면 좀 더 방의 분위기는
+                  따뜻하면서 세련된 분위기를 가지게 될 것이다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+            <img src="static/images/img_1.jpg" alt="Image" class="img-fluid" />
+          </div>
+          <div class="col-md-4 mt-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <img src="static/images/img_3.jpg" alt="Image" class="img-fluid" />
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <img src="static/images/img_2.jpg" alt="Image" class="img-fluid" />
+          </div>
+        </div>
+        <div class="row section-counter mt-5">
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="counter-wrap mb-5 mb-lg-0">
+              <span class="number"
+                ><span class="countup text-primary">10354</span></span
+              >
+              <span class="caption text-black-50">My Place 방문자</span>
+            </div>
+          </div>
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="counter-wrap mb-5 mb-lg-0">
+              <span class="number"
+                ><span class="countup text-primary">10014</span></span
+              >
+              <span class="caption text-black-50">My Place 이용자</span>
+            </div>
+          </div>
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="counter-wrap mb-5 mb-lg-0">
+              <span class="number"
+                ><span class="countup text-primary">37087</span></span
+              >
+              <span class="caption text-black-50">My Place AI모델 학습량</span>
+            </div>
+          </div>
+          <div
+            class="col-6 col-sm-6 col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="counter-wrap mb-5 mb-lg-0">
+              <span class="number"
+                ><span class="countup text-primary">5784</span></span
+              >
+              <span class="caption text-black-50">리뷰 작성 수</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section sec-testimonials bg-light">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-md-6">
+            <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
+                My Place 리뷰
+            </h2>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div id="testimonial-nav">
+              <span class="prev" data-controls="prev">Prev</span>
+
+              <span class="next" data-controls="next">Next</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4"></div>
+        </div>
+        <div class="testimonial-slider-wrap">
+          <div class="testimonial-slider">
+            <div class="item">
+              <div class="testimonial">
+                <img
+                  src="static/images/person_1-min.jpg"
+                  alt="Image"
+                  class="img-fluid rounded-circle w-25 mb-4"
+                />
+                <div class="rate">
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                </div>
+                <h3 class="h5 text-primary mb-4">James Smith</h3>
+                <blockquote>
+                  <p>
+                    &ldquo;정말 사용하기 편리하면서 제가 꾸며보고 싶은 스타일을 기반으로 
+                    가구를 추천해주니까 정말 좋아요!!&rdquo;
+                  </p>
+                </blockquote>
+                <p class="text-black-50">남성, 회사원</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="testimonial">
+                <img
+                  src="static/images/person_2-min.jpg"
+                  alt="Image"
+                  class="img-fluid rounded-circle w-25 mb-4"
+                />
+                <div class="rate">
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                </div>
+                <h3 class="h5 text-primary mb-4">Mike Houston</h3>
+                <blockquote>
+                  <p>
+                    &ldquo;My Place 내 집을 꾸미는 데 필요한 모든 것을 제공해줍니다. 다양한 제품, 아이디어, 그리고 
+                    My Place 조언으로 내 방을 멋지게 꾸밀 수 있었습니다.&rdquo;
+                  </p>
+                </blockquote>
+                <p class="text-black-50">Designer, Co-founder</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="testimonial">
+                <img
+                  src="static/images/person_3-min.jpg"
+                  alt="Image"
+                  class="img-fluid rounded-circle w-25 mb-4"
+                />
+                <div class="rate">
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                </div>
+                <h3 class="h5 text-primary mb-4">Cameron Webster</h3>
+                <blockquote>
+                  <p>
+                    &ldquo;
+                    My Place 커뮤니티는 집 꾸미기에 관심 있는 사람들이 모여 다양한 정보를 공유합니다.
+                    My Place 아이디어를 참고하면서 내 방을 꾸몄습니다.&rdquo;
+                  </p>
+                </blockquote>
+                <p class="text-black-50">Designer, Co-founder</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="testimonial">
+                <img
+                  src="static/images/person_4-min.jpg"
+                  alt="Image"
+                  class="img-fluid rounded-circle w-25 mb-4"
+                />
+                <div class="rate">
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                </div>
+                <h3 class="h5 text-primary mb-4">Dave Smith</h3>
+                <blockquote>
+                  <p>
+                    &ldquo;My Place에서는 무료로 내 방의 인테리어 디자인을 작성해줍니다.
+                    My Place 조언과 함께 새로운 아이디어를 얻을 수 있었습니다.&rdquo;
+                  </p>
+                </blockquote>
+                <p class="text-black-50">Designer, Co-founder</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>주소&연락</h3>
+              <address>스마트 인재개발원 2층 7교육실</address>
+              <ul class="list-unstyled links">
+                <li><a href="tel://11234567890">010-1544-3939</a></li>
+                <li><a href="tel://11234567890">062-456-4561</a></li>
+                <li>
+                  <a href="mailto:info@mydomain.com">MyPlace@naver.com</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Sources</h3>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">예비용</a></li>
+                <li><a href="#">예비용</a></li>
+                <li><a href="#">예비용</a></li>
+                <li><a href="#">예비용</a></li>
+                <li><a href="#">예비용</a></li>
+                <li><a href="#">예비용</a></li>
+              </ul>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">예비용</a></li>
+                <li><a href="#">예비용</a></li>
+                <li><a href="#">예비용</a></li>
+                <li><a href="#">예비용</a></li>
+                <li><a href="#">예비용</a></li>
+                <li><a href="#">예비용</a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>My Place SNS</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">예비용</a></li>
+                <li><a href="#">예비용</a></li>
+                <li><a href="#">예비용</a></li>
+              </ul>
+
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-pinterest"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-dribbble"></span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+              **==========
+            -->
+
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              . All Rights Reserved. &mdash; Designed with love by
+              <a href="https://untree.co">Untree.co</a>
+              <!-- License information: https://untree.co/license/ -->
+            </p>
+            <div>
+              Distributed by
+              <a href="https://themewagon.com/" target="_blank">themewagon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tiny-slider.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/counter.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+  </body>
+</html>

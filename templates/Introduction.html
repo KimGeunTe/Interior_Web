@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Note: Only needed for demo purposes. Delete for production sites.
+-->
+<html>
+  <head>
+    <title>My Place</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/Intrmain.css') }}"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/Intrnoscript.css') }}"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
+      <!-- Banner -->
+      <section
+        class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
+      >
+        <div class="content">
+          <h1>Introducing MyPlace</h1>
+
+          <p>
+            <h3>'왜 우리는 자신의 공간에 맞게 인테리어 하기가</h3> 
+            <h3>어려운 걸까?'</h3><br>
+            그 이유는 자신의 공간이 어떤 특성을 가졌는지 잘 모르기 때문입니다. <br>
+            
+       
+       <br>My Place는 내 공간의 분위기와 인식된 가구를 분석해서 취향에 맞는 제품추천과 평면의 보이지 않는 공간을 3D로 입체화시켜 추천 제품들을 가상공간에 시뮬레이션할 수 있는 서비스입니다.<br>
+        
+        <br>My Place와 함께 맞추형 솔루션을 경험해 보세요.<br>
+          </p>
+          <ul class="actions stacked">
+            <li>
+              <br>
+              
+              <button type="button" onclick="$('html, body').stop().animate( { scrollTop : '1000' } ); ">MyPlace 이용방법</button>
+              
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="static/images/titleimg1.png" alt="" />
+        </div>
+      </section>
+
+      <!-- Spotlight -->
+      <section
+        class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+        id="first"
+      >
+        <div class="content" style="center">
+          <h2>MyPlace 이용방법</h2>
+          <br>
+          <br>
+            <div style="float: left">
+              <img src="static\images\myplaceIntr1.png" /><br>
+              <h5>step1</h5><br>
+              <h4>사진 업로드</h4>
+            </div>
+            <div style="float: left">
+              <br>
+              <img src ="static\images\arrow.png" style ="margin:0px 45px 0px 45px"/><br>
+            </div>
+            
+            <div style="float: left">
+              <img src="static\images\myplaceIntr2.png"  /><br>
+              <h5>step2</h5><br>
+              <h4>분위기 분석 </h4>
+              <h4>가구 객체인식</h4>
+            </div>
+            <div style="float: left">
+              <br>
+              <img src ="static\images\arrow.png" style ="margin:0px 45px 0px 45px" />
+              <br>
+            </div>
+            
+            <div style="float: left">
+              <img src="static\images\myplaceIntr3.png" /><br>
+              <h5>step3</h5><br>
+              <h4>분위기에 맞는</h4>
+              <h4>가구 추천 </h4>
+            </div>
+
+            <div style="float: left">
+              <br>
+              <img src ="static\images\arrow.png" style ="margin:0px 45px 0px 45px"/><br>
+            </div>
+          
+            <div style="float: left">
+              <img src="static\images\myplaceIntr4.png"  /><br>
+              <h5>step4</h5><br>
+              <h4>3D 시뮬레이션</h4>
+            </div>
+            <div style="float: left">
+              <br>
+              <img src ="static\images\arrow.png" style ="margin:0px 45px 0px 45px"/><br>
+            </div>
+           
+            
+            <div style="float: left">
+              <img src="static\images\myplaceIntr5.png" /><br>
+              <h5>step5</h5><br>
+              <h4>My Place 완성</h4>
+            </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div>
+            <ul class="actions stacked">
+              <li>
+              <a href="Login" class="button large wide smooth-scroll-middle"
+                >MyPlace 시작하기</a>
+              </li>
+            </ul>
+          </div>   
+                  
+           
+      </section>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/Intrjquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/Intrjquery.scrollex.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/Intrjquery.scrolly.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/Intrbrowser.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/Intrbreakpoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/Intrutil.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/Intrmain.js') }}"></script>
+
+    <!-- Note: Only needed for demo purposes. Delete for production sites. -->
+    <script src="{{ url_for('static', filename='js/Intrdemo.js') }}"></script>
+  </body>
+</html>
